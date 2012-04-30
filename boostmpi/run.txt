@@ -1,0 +1,6 @@
+mpic++ -I/home/pranay/Downloads/boost_1_49_0 test.cpp -Llibdir /home/pranay/boostmpi/lib/libboost_mpi.so
+
+// include other so files as needed...the above directory contains serialization and libboost_mpi_python also
+./bjam --with-mpi install --prefix=/home/pranay/boostmpi/ to install additional boost libraries like graph, graph_parallel etc
+./bootstrap.sh --show-libraries in the home directory of the boost will show all the libraries that are available...install using the above command
+

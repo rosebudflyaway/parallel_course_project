@@ -1,0 +1,19 @@
+MCC = mpic++ -I/home/pranay/Downloads/boost_1_49_0
+CC = g++
+SOURCE = main.cpp Globals.cpp
+HEADER = Globals.h
+LIBRARY = -Llibdir /home/pranay/boostmpi/lib/libboost_mpi.so
+OBJ = main.o Globals.o
+EXEC = simulate
+
+build : $(OBJ)
+	$(MCC) -o $(EXEC) $(OBJ) $(LIBRARY)
+
+main.o : $(SOURCE) $(HEADER)
+	$(MCC) -c main.cpp $(LIBRARY)
+
+Globals.o : Globals.cpp Globals.h
+	$(CC) -c Globals.cpp
+
+clean :
+	rm -f *.o

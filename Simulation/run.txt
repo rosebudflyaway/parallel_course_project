@@ -1,0 +1,1 @@
+mpirun -np 2 ./simulate -F 0.1 -R 0.1 0

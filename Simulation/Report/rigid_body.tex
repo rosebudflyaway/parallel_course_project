@@ -1,0 +1,123 @@
+\documentclass[10pt, conference, compsocconf]{IEEEtran}
+\IEEEoverridecommandlockouts
+%%%% PACKAGES USED%%%%%%%%%%%%%%%%%
+\usepackage[T1]{fontenc}
+\usepackage[tight,footnotesize]{subfigure}
+%\usepackage{float}
+%\usepackage{verbatim}
+%\usepackage{stfloats}
+\usepackage{cite}
+\usepackage{graphicx}
+\graphicspath{{./figures_asonam/}}
+\usepackage{verbatim}
+\usepackage{amsmath}
+\usepackage{amsthm,amsfonts,amssymb}
+\usepackage{float}
+\interdisplaylinepenalty=2500
+\usepackage{url}
+
+\usepackage{xspace}
+\usepackage{setspace}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{subfigure}
+\usepackage{ulem}
+\usepackage{array}
+\usetikzlibrary{snakes,arrows,shapes}
+\usetikzlibrary{positioning}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{pstricks,pst-plot,pst-node,pst-grad,pstricks-add,pst-tree,pst-slpe}
+\newcommand{\pw}[1]{\pscirclebox[linewidth=0.4pt,
+  fillcolor=cyan!40,fillstyle=solid]{#1}}
+  \newcommand\arc[4]{\ncline{#1}{#2}{#3}\ncput{\colorbox{gray!20}{#4}}}
+\newcommand\narc[4]{\ncline{#1}{#2}{#3}\ncput{\colorbox{violet!30}{#4}}}
+
+%\usepackage[linesnumbered,boxed,commentsnumbered]{algorithm2e}
+
+
+%%%%% Theorem definitions and lemma etc%%%%
+\newtheorem*{mydef}{Definition}
+\newtheorem{thm}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem*{myclaim}{Claim}
+
+\newcommand{\alg}{CMDB-Miner\xspace}
+\newcommand{\vect}[1]{{\boldsymbol #1}}
+\newcommand{\bu}{\vect{u}}
+
+
+%%%%%%%%%%% new for algorithm
+\floatname{algorithm}{Procedure}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+\let\oldhat\hat
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\renewcommand{\hat}[1]{\oldhat{\mathbf{#1}}}
+\newcommand{\vmprod}[3]{%
+%\vec{#1}^\intercal\!\vec{#2}\vec{#3}
+   \vec{#1}^\intercal \vec{#2}\mskip\thinmuskip \vec{#3}%
+}
+% correct bad hyphenation here
+%\hyphenation{}
+
+% minimum amount of text per page
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\textfraction}{0.2}
+
+\begin{document}
+\title{MPI Based Rigid Body Simulation}
+
+% author names and affiliations
+% use a multiple column layout for up to two different
+% affiliations
+\author{
+\IEEEauthorblockN{Pranay Anchuri, Ying Lu, Jielei Wang,
+Christopher Carothers
+}
+
+\IEEEauthorblockA{%
+\{anchup,luy4,wangj22, carotc\}@rpi.edu\\
+Department of Computer Science, 
+Rensselaer Polytechnic Institute, Troy, NY 12180, USA\\
+}
+}
+
+
+
+% make the title area
+\maketitle
+
+
+\begin{abstract}
+  The abstract of the paper goes here.
+\end{abstract}
+
+
+\begin{IEEEkeywords}
+  Rigid body, MPI,
+\end{IEEEkeywords}
+
+
+\section{Introduction}
+
+\section{Related Work}
+
+\section{ Approach}
+
+\section{Simulation}
+
+\section{Results}
+
+\section{Future Work}
+
+\section{Conclusion}
+
+
+\IEEEpeerreviewmaketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Paper begins here %%%%%%%%%%%%%
+\setstretch{0.95}
+
+\end{document}
